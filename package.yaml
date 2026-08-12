@@ -1,0 +1,16 @@
+# Package definition for deno
+
+package_name: deno
+github_repo: denoland/deno
+artifact_format: zip
+description: "A modern runtime for JavaScript and TypeScript."
+
+# deno only publishes amd64/arm64 Linux builds, and the release also
+# contains denort-*/libdenort-* assets that match the same architecture
+# patterns as the deno-* assets - auto-discovery would be ambiguous, so
+# release patterns are pinned explicitly here.
+architectures:
+  amd64:
+    release_pattern: "deno-x86_64-unknown-linux-gnu.zip"
+  arm64:
+    release_pattern: "deno-aarch64-unknown-linux-gnu.zip"
