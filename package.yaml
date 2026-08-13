@@ -2,6 +2,7 @@
 
 package_name: deno
 github_repo: denoland/deno
+license: MIT
 artifact_format: zip
 description: "A modern runtime for JavaScript and TypeScript."
 
